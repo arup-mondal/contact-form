@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Form</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+</head>
+<body>
+<div class="container">	
+	<form id="contactForm" action="ajax.php" method="post">
+		<div class="row">
+			<div class="form-group col-sm-6">
+				<label for="name">Name</label>
+				<input id="name" name="name" class="form-control"  type="text" placeholder="Enter name" />
+			</div>
+			<div class="form-group col-sm-6">
+				<label for="email">Email</label>
+				<input id="email" name="email" class="form-control" type="email" placeholder="Enter email" />
+			</div>
+		</div>
+		<div class="row">
+			<div class="form-group col-sm-12">
+				<label for="message">Message</label>
+				<textarea id="message" name="msg" class="form-control" required="" rows="4" placeholder="Enter your message"></textarea>
+			</div>
+		</div>
+		<button id="form-submit" class="btn btn-success btn-lg pull-right " type="submit">Send</button>
+	</form>
+</div>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-validate.js"></script>
+<script type="text/javascript" src="js/form.js"></script>
+</body>
+</html>
